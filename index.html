@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>DrivenEats</title>
+    <link href="reset.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="títulos_header">
+        <h1>Driven Eats</h1>
+        <h3>Sua comida pronta em 6 minutos</h3>
+      </div>
+    </div>
+
+    <div class="main">
+      <h2 class="título_opções">Primeiro, seu prato</h2>
+
+      <div class="seção pratos">
+        <!--duas classes separadas - seção e pratos-->
+        <div onclick="selecionarComida(this, '.prato1')" class="opções prato1">
+          <img src="./imagens/frango_yin_yang 1.png" id="foto" />
+          <h2 class="título">Frango Yin Yang</h2>
+          <h3 class="subtítulo">Um pouco de batata, um pouco de salada</h3>
+          <h2 class="preços_comidas">R$ 14,90</h2>
+        </div>
+
+        <div onclick="selecionarComida(this, '.prato2')" class="opções prato2">
+          <img src="./imagens/frango_yin_yang 1.png" id="foto" />
+          <h2 class="título">Frango Yin Yang</h2>
+          <h3 class="subtítulo">Um pouco de batata, um pouco de salada</h3>
+          <h2 class="preços_comidas">R$ 14,90</h2>
+        </div>
+
+        <div onclick="selecionarComida(this, '.prato3')" class="opções prato3">
+          <img src="./imagens/frango_yin_yang 1.png" id="foto" />
+          <h2 class="título">Frango Yin Yang</h2>
+          <h3 class="subtítulo">Um pouco de batata, um pouco de salada</h3>
+          <h2 class="preços_comidas">R$ 14,90</h2>
+        </div>
+      </div>
+      <!--fecha div seções de comidas-->
+
+      <h2 class="título_opções">Agora, sua bebida</h2>
+
+      <div class="seção bebidas">
+        <div onclick="selecionarBebida(this, '.bebida1')" class="opções bebida1">
+          <img src="./imagens/coquinha_gelada 1.png" id="foto" />
+          <h2 class="título">Coquinha gelada</h2>
+          <h3 class="subtítulo">Lata 350ml</h3>
+          <h2 class="preços_bebidas">R$ 4,90</h2>
+        </div>
+
+        <div onclick="selecionarBebida(this, '.bebida2')" class="opções bebida2">
+          <img src="./imagens/coquinha_gelada 1.png" id="foto" />
+          <h2 class="título">Coquinha gelada</h2>
+          <h3 class="subtítulo">Lata 350ml</h3>
+          <h2 class="preços_bebidas">R$ 4,90</h2>
+        </div>
+
+        <div onclick="selecionarBebida(this, '.bebida3')" class="opções bebida3">
+          <img src="./imagens/coquinha_gelada 1.png" id="foto" />
+          <h2 class="título">Coquinha gelada</h2>
+          <h3 class="subtítulo">Lata 350ml</h3>
+          <h2 class="preços_bebidas">R$ 4,90</h2>
+        </div>
+      </div>
+
+      <h2 class="título_opções">Por fim, sua sobremesa</h2>
+
+      <div class="seção sobremesas">
+        <div onclick="selecionarSobremesa(this, '.sobremesa1')" class="opções sobremesa1">
+          <img src="./imagens/pudim 1.png" id="foto" />
+          <h2 class="título">Pudim</h2>
+          <h3 class="subtítulo">Apenas pudim</h3>
+          <h2 class="preços_bebidas">R$ 7,90</h2>
+        </div>
+
+        <div onclick="selecionarSobremesa(this, '.sobremesa2')" class="opções sobremesa2">
+          <img src="./imagens/pudim 1.png" id="foto" />
+          <h2 class="título">Pudim</h2>
+          <h3 class="subtítulo">Apenas pudim</h3>
+          <h2 class="preços_bebidas">R$ 7,90</h2>
+        </div>
+
+        <div onclick="selecionarSobremesa(this, '.sobremesa3')" class="opções sobremesa3">
+          <img src="./imagens/pudim 1.png" id="foto" />
+          <h2 class="título">Pudim</h2>
+          <h3 class="subtítulo">Apenas pudim</h3>
+          <h2 class="preços_bebidas">R$ 7,90</h2>
+        </div>
+      </div>
+      <div onclick="fecharPedido()" class="fechar_pedido">
+        <div class="botão_fechar">
+          <h1> Selecione os 3 itens <br/> para fechar o pedido</h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
